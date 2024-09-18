@@ -45,7 +45,6 @@ def lambda_handler(event, context):
         modelId=model_id,
         body=json.dumps(request_body)
     )
-
     # Extract the generated response from the payload
     generated_text = response['payload'].get('completions', [{}])[0].get('text', '')
 
