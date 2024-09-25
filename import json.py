@@ -22,7 +22,6 @@ def lambda_handler(event, context):
             }
         ]
     }
-
     # If image data is provided, include it in the request
     if image_data:
         request_body["messages"][0]["content"].append({
